@@ -5,7 +5,7 @@ void test_send_cmd()
 {
     Serial.println("Sending command: AT+QMTCFG=?");
     SIM.println("AT+QMTCFG=?");
-    // waitForResponse();
+    waitForResponse();
 }
 
 void connect_mqtt() {
@@ -91,8 +91,8 @@ void setup()
   delay(1000);
 
   test_send_cmd();
-  // connect_mqtt();
-  // publish_mqtt();
+  connect_mqtt();
+  publish_mqtt();
 }
 
 void loop() 

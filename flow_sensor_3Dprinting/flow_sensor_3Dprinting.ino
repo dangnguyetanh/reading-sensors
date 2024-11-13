@@ -20,5 +20,4 @@ void loop()
   Serial.print("Lượng mưa: ");
   Serial.print(rainfall);
   Serial.println(" mm");
-  delay(1000); 
 }
